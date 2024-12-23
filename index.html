@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .btn {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head text-center">
+        <h1>Welcome to our site</h1>
+      </div>
+      <form>
+        <div class="mb-3">
+          <label for="titleInput" class="form-label">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="titleInput"
+            aria-describedby="titleHelp"
+            required
+            minlength="6"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="descriptionInput" class="form-label">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="descriptionInput"
+            required
+            minlength="20"
+          />
+        </div>
+        <div class="text-center">
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            onclick="addNote()"
+          >
+            Add Note
+          </button>
+        </div>
+      </form>
+      <div class="text-center">
+        <button
+          id="Display"
+          onclick="displayData()"
+          class="btn btn-outline-primary"
+        >
+          Display All
+        </button>
+      </div>
+
+      <section id="cards">
+        <!--         <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button type="button" class="btn btn-outline-warning">Edit</button>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+          </div>
+        </div> -->
+      </section>
+
+      <div class="clear"></div>
+    </div>
+    <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
